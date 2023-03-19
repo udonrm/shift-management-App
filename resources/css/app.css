@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 521px) {
+    /* ヘッダーセルのフォントサイズを小さくする */
+    .fc {
+        font-size: 12px;
+    }
+
+    /* 日付の表示形式を短くする */
+    .fc .fc-col-header-cell-cushion {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 520px) {
+    /* ヘッダーセルのフォントサイズを小さくする */
+    .fc {
+        font-size: 11px;
+    }
+
+    /* 日付の表示形式を短くする */
+    .fc .fc-col-header-cell-cushion {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    /* ヘッダーセルのフォントサイズを小さくする */
+    .fc {
+        font-size: 12px;
+    }
+
+    /* 日付の表示形式を短くする */
+    .fc .fc-col-header-cell-cushion {
+        white-space: nowrap;
+    }
+}
+@media (max-width: 400px) {
+    /* ヘッダーセルのフォントサイズを小さくする */
+    .fc {
+        font-size: 9px;
+    }
+
+    /* 日付の表示形式を短くする */
+    .fc .fc-col-header-cell-cushion {
+        white-space: nowrap;
+    }
+}
