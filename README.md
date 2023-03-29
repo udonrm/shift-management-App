@@ -1,66 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Name
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## shifty
+同時記録型シフト管理アプリ「shifty」です。
+カレンダーをチーム全員で共通管理することでシフトの調整が楽になることがメインコンセプトになります。
 
-## About Laravel
+# DEMO
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ログイン画面から基本操作まで
+ログイン後からシフトの入力、シフトの確認までの動作イメージです。
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+直感的なドラッグ＆ドロップ操作でシフトを簡単に追加、編集することができます。
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+機能も最小限まで絞ったため、誰でも簡単に使えるアプリになっています。
 
-## Learning Laravel
+https://user-images.githubusercontent.com/115349126/228453861-672d6502-6ce8-4c6d-b083-facd9b4e4cf4.mp4
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## チームで運用する場合の動作イメージ
+実際にチームの複数人でアプリを運用する場面を想定した動画です。
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+左画面がユーザー1で右画面がユーザー2の操作画面です。
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+全員のシフトの入力状況が即座にリアルタイムで更新され全員が確認できるようにこだわりました。
 
-## Laravel Sponsors
+自分のシフトはオレンジ色で目立たせ、他の人のシフトと区別しやすいように設定しています。当然ですが、他のスタッフのシフトは勝手に編集できないように設計しました。
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+このようにシフト提出を管理することで、人の足りていない時間帯や人の多すぎる時間帯が全員に共有される（管理者が知らせる必要がない）ため効率的なシフトが組まれることが期待できます。
 
-### Premium Partners
+https://user-images.githubusercontent.com/115349126/228453922-ee6590b8-7d70-4cfe-8525-61697c444609.mp4
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+# Features
 
-## Contributing
+従来のシフト管理アプリは、スタッフが各々のカレンダー画面からシフトを提出して責任者がその情報をまとめて最終的なシフトを完成させるという方法を採用しています。しかし、「shifty」ではスタッフ全員に共通のカレンダーを与え、そこに一斉にシフトを書き込んでもらうという方法を採用しているため、シフトの面倒な再調整や極端な人員の偏りが起こりにくいという状況が期待できます。
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Usage
 
-## Code of Conduct
+[shifty](https://shifty.udonrm.com)に会員登録後、ヘッダーメニューから新規チームの作成をしたのちにカレンダーからシフトの登録を行なってください。
+シフトの登録はマウスのドラッグ＆ドロップで追加、加工ができます。
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Note
 
-## Security Vulnerabilities
+PCでの利用を想定して開発しました。
+そのためスマホでも問題なく動作はしますが操作性が悪いです。スマホでシフトを追加する場合は長押しで操作してください。
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Author
 
-## License
+@udonrm
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
