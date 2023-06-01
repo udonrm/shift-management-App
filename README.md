@@ -10,12 +10,12 @@ macOS12.63動作確認済み<br>
 Safari16.3動作確認済み<br>
 google Chromeバージョン: 111.0.5563.146動作確認済み
 
-## 開発環境/言語
+## 開発環境/使用技術
 開発環境：MAMP6.8<br>
-使用言語：PHP v8.2.3 , JavaScript v18.14.2
+使用技術：PHP v8.2.3 , JavaScript v18.14.2 , Laravel , Laravel Jetstream , FullCalendar
 
-## フレームワーク
-Laravel 10.3.3
+## 本番環境
+エックスサーバーにSSH接続してデプロイ済み
 
 ## ER図
 ![スクリーンショット 2023-04-01 16 26 31](https://user-images.githubusercontent.com/115349126/229272148-79ac87bc-8106-486b-8f54-ec05305b67fd.png)
